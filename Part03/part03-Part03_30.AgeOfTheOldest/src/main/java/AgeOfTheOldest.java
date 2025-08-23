@@ -12,11 +12,9 @@ public class AgeOfTheOldest {
                 break;
             }
             String[] parts = line.split(",");
-            for (int i = 1; i < parts.length; i = i + 2) {
-                int age = Integer.valueOf(parts[i]);
-                if (age > oldest) {
-                    oldest = age;
-                }
+            int age = Integer.valueOf(parts[1]);
+            if (age > oldest) {
+                oldest = age;
             }
         }
         System.out.println("Age of the oldest: " + oldest);
