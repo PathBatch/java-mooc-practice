@@ -12,7 +12,7 @@ public class PersonalInformationCollection {
         while (true) {
             System.out.println("First name:");
             String firstName = scanner.nextLine();
-            if (firstName.equals("")) {
+            if (firstName.isEmpty()) {
                 break;
             }
             System.out.println("Last name:");
